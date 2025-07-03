@@ -1,0 +1,117 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000000;
+  height: 100%;
+}
+
+/* Make the container take full screen and center the content */
+.login-container {
+  background: radial-gradient(circle, #1a0f00 0%, #000000 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Login box styling */
+.login-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 0 20px #FCBB1233;
+}
+
+/* Logo and heading */
+.logo-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+/* Form Styling */
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #444;
+  background: #242424;
+  color: white;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #FCBB12;
+}
+
+/* Forgot Password link */
+.forgot-password {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.forgot-password a {
+  color: #FCBB12;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password a:hover {
+  color: #FAFF00;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #FCBB12;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .login-box {
+    padding: 3rem;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-box {
+    max-width: 600px;
+    padding: 3rem 4rem;
+  }
+
+  .logo {
+    height: 80px;
+  }
+}

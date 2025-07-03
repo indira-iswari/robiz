@@ -1,0 +1,11 @@
+.premium-preview .fruit-banner {
+  background: linear-gradient(135deg, #f0f8e8 0%, #e8f5e8 100%);
+}
+
+.trending-preview .trending-preview-banner {
+  margin: 0;
+}
+
+.trending-preview .sale-banner {
+  min-height: 250px;
+}

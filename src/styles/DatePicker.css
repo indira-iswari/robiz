@@ -1,0 +1,155 @@
+.date-picker-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.date-picker-modal {
+  background: #242424;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  color: #ffffff;
+}
+
+.date-picker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.date-picker-header h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: auto;
+}
+
+.date-picker-subtitle {
+  color: #cccccc;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.month-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.nav-arrow {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: auto;
+}
+
+.nav-arrow:hover {
+  color: #FCBB12;
+}
+
+.month-year {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.calendar-grid {
+  margin-bottom: 2rem;
+}
+
+.weekday-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.weekday {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #cccccc;
+  padding: 0.5rem 0;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.calendar-day:not(.empty):hover {
+  background: #333333;
+}
+
+.calendar-day.selected {
+  background: #FCBB12;
+  color: #000000;
+  font-weight: bold;
+}
+
+.calendar-day.in-range {
+  background: rgba(252, 187, 18, 0.3);
+  color: #ffffff;
+}
+
+.calendar-day.empty {
+  cursor: default;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: #FCBB12;
+  color: #000000;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirm-btn:hover:not(:disabled) {
+  background: #FAFF00;
+}
+
+.confirm-btn:disabled {
+  background: #333333;
+  color: #666666;
+  cursor: not-allowed;
+}

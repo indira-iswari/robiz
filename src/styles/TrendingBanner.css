@@ -1,0 +1,120 @@
+.date-section {
+  margin: 2rem 0;
+}
+
+.date-section label {
+  display: block;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.date-selector-btn {
+  width: 100%;
+  background: #242424;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.date-selector-btn:hover {
+  background: #333333;
+}
+
+.date-info {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.trending-preview-banner {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.sale-banner {
+  background: linear-gradient(135deg, #E91E63 0%, #9C27B0 100%);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  position: relative;
+}
+
+.sale-content {
+  flex: 1;
+  z-index: 2;
+}
+
+.sale-header {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.sale-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+}
+
+.sale-subtitle {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
+}
+
+.sale-discount {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  line-height: 1;
+}
+
+.sale-date {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+}
+
+.shop-now-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+.sale-image {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.sale-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

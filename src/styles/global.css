@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.banner-container {
+  min-height: 100vh;
+  background: #000000;
+}
+
+.banner-content {
+  padding: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.banner-title {
+  color: #FCBB12;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.make-payment-btn {
+  width: 100%;
+  background: #242424;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.make-payment-btn:hover:not(:disabled) {
+  background: #FCBB12;
+  color: #000000;
+}
+
+.make-payment-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.info-section {
+  margin: 2rem 0;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.info-icon {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.click-here {
+  color: #FCBB12;
+  text-decoration: none;
+}
+
+.click-here:hover {
+  color: #FAFF00;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #cccccc;
+  text-align: center;
+  line-height: 1.4;
+}

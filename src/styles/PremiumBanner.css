@@ -1,0 +1,137 @@
+.date-selector {
+  margin: 1rem 0;
+}
+
+.date-button {
+  background: #242424;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: left;
+}
+
+.date-button:hover {
+  background: #333333;
+}
+
+.preview-section {
+  margin: 2rem 0;
+}
+
+.preview-section h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.banner-preview {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(252, 187, 18, 0.2);
+}
+
+.fruit-banner {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0f8e8 0%, #e8f5e8 100%);
+  min-height: 200px;
+}
+
+.banner-content-left {
+  flex: 1;
+}
+
+.banner-content-left h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333333;
+  font-weight: bold;
+}
+
+.green-text {
+  color: #4CAF50 !important;
+}
+
+.banner-content-left p {
+  color: #666666;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.buy-now-btn {
+  background: #FF6B35;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.fruit-image {
+  flex: 0 0 100px;
+  height: 100px;
+  position: relative;
+}
+
+.watermelon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.watermelon::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background: #FF6B6B;
+  border-radius: 50%;
+}
+
+.summary-section {
+  background: #111111;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.summary-section h3 {
+  color: #FCBB12;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333333;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.summary-total span:last-child {
+  color: #FCBB12;
+}

@@ -14,7 +14,6 @@ function PaymentSummary() {
   }
 
   const handlePayment = () => {
-    // Handle payment processing here
     alert("Payment processed successfully!");
   };
 
@@ -83,7 +82,7 @@ function PaymentSummary() {
           </div>
           <div className="summary-item">
             <span>Base price</span>
-            <span>{bannerType === "Premium" ? "25,000" : "15,000"}</span>
+            <span>{bannerType === "Premium" ? "5,000" : "3,000"}</span>
           </div>
           <div className="summary-item">
             <span>Tax</span>

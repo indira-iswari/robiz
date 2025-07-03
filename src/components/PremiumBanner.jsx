@@ -6,7 +6,7 @@ import "../styles/PremiumBanner.css";
 
 function PremiumBanner() {
   const navigate = useNavigate();
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState("14/04/2021-23/04/2021");
   const [showDatePicker, setShowDatePicker] = useState(false);
 
   const handleDateSelect = (date) => {
@@ -15,16 +15,14 @@ function PremiumBanner() {
   };
 
   const handleMakePayment = () => {
-    if (selectedDate) {
-      navigate("/payment-summary", { 
-        state: { 
-          bannerType: "Premium",
-          selectedDate,
-          price: 5500,
-          duration: 10
-        }
-      });
-    }
+    navigate("/payment-summary", { 
+      state: { 
+        bannerType: "Premium",
+        selectedDate,
+        price: 5500,
+        duration: 10
+      }
+    });
   };
 
   return (
@@ -39,7 +37,7 @@ function PremiumBanner() {
             className="date-button"
             onClick={() => setShowDatePicker(true)}
           >
-            Date: {selectedDate ? selectedDate : "14/04/2021-23/04/2021"} ▼
+            Date: {selectedDate} ▼
           </button>
         </div>
 
@@ -77,7 +75,7 @@ function PremiumBanner() {
           </div>
           <div className="summary-item">
             <span>Base price</span>
-            <span>25,000</span>
+            <span>5,000</span>
           </div>
           <div className="summary-item">
             <span>Tax</span>
@@ -92,7 +90,6 @@ function PremiumBanner() {
         <button 
           className="make-payment-btn"
           onClick={handleMakePayment}
-          disabled={!selectedDate}
         >
           MAKE PAYMENT
         </button>
